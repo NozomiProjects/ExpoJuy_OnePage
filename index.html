@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/main.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <title>ExpoJuy 2022</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li class="list-item"><a href="#home">Inicio</a></li>
+        <li class="list-item"><a href="#evento">Evento</a></li>
+        <li class="list-item"><a href="#nosotros">Sobre nosotros</a></li>        
+        <li class="list-item"><a href="#contact">Registrate</a></li>
+        <li class="list-item"><a href="#clima">Estado del clima</a></li>
+      </ul>
+      <img src="assets/logo.jpg" alt="logo" class="logo" />
+    </nav>
+  </header>
+
+  <section id="home" class="izquierda">
+    <div class="title">
+      <h1>De Jujuy al Mundo</h1>
+    </div>
+    <div class="container">
+      
+      <div class="cont-item">
+        
+        <p>
+          <span> Del 7 al 16 de octubre, te esperamos para vivir la </span><br />
+          <b>ExpoJuy 2022</b>
+        </p>
+
+      </div>
+      <div class="cont-imagen">
+        <img src="/assets/expojuy.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="evento">
+    <div class="container">
+      <div class="cont-imagen">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/IhbqGoSUxIM" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="text-event">
+        <h2>Sobre el evento</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          minima dolorem consequatur qui. Ipsa facilis, doloremque illum
+          consequuntur corporis, ad ea illo eius accusantium omnis officia
+          beatae eaque, inventore voluptates. Incidunt quasi unde illo
+          dignissimos doloremque placeat et enim iure deserunt eveniet ad,
+          praesentium reiciendis doloribus, perferendis totam harum quo animi
+          sit numquam possimus iusto aspernatur tempore! Assumenda, in sequi? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Reiciendis eum commodi adipisci ipsam ducimus, pariatur rem repudiandae velit eveniet
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="container">
+      <div class="text-about">
+        <h2>Sobre nosotros</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          reiciendis ab accusamus voluptatum. Soluta, eius adipisci enim
+          praesentium incidunt voluptatibus eaque vitae repellendus ratione
+          sed repellat minus labore iste accusantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+          architecto vitae laudantium eaque ipsa ea earum, neque, corrupti nam, reprehenderit ad harum optio velit
+          aliquam provident inventore unde quod aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Laborum ratione molestias, impedit quo repudiandae nesciunt expedita eligendi neque! 
+        </p>
+      </div>
+      <div class="cont-imagen-about">
+        <img src="assets/expojuy-vista-up.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h2>Registra tu stand</h2>
+      </div>
+      <div class="contact-form">        
+
+        <form action="" id="form">
+          <div class="form-group">
+            <label for="comercio">Comercio:</label>
+            <input id='comercio' class="form-control" type="text" name="comercio" />
+          </div>
+          <div class="form-group">
+            <label for="titular">Titular:</label>
+            <input id="titular" class="form-control" type="text" name="titular" />
+          </div>
+          <div class="form-group">
+            <label for="celular">Celular:</label>
+            <input id="celular" class="form-control" type="text" name="celular" />
+          </div>
+          <div class="form-group">
+            <label for="correo">E-mail:</label>
+            <input id="correo" class="form-control" type="email" name="correo" />
+          </div>
+
+
+          <button id="enviar" class="btn btn-light" type="submit">Enviar</button>
+        </form>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <section id="clima">
+    <h2 id="text-clima">Estado del clima en el lugar</h2>
+    <div id="contenedor">      
+      <div id="caja01">
+        <h1 id="temp-valor"></h1>
+        <h1 id="temp-desc"></h1>
+      </div>
+      <div id="caja02">
+        <h2 id="ubicacion"></h2>
+        <img id="icono-anim" src="" alt="icono clima">
+      </div>
+      <div id="caja03">
+        <h3>Veloc. del viento</h3>
+        <h1 id="viento"></h1>
+      </div>
+    </div>
+  </section>
+
+  <footer id="numeros">
+    
+    <h3>Copyright © Ministerio de Desarrollo Económico y Producción de Jujuy </h3>
+    <a href=""><img src="assets/whatsapp.png" alt="Whatsapp"></a>
+    
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/clima.js"></script>
+</body>
+
+</html>
